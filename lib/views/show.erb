@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>The Gossip Project number #{params['id']}</title>
+  </head>
+  <body>
+    <h1>Page Potin</h1>
+    <p> Voici le Potin numéro <%= id %></p>
+    <br/>
+        <p>
+          <%= gossip.author %><br/>
+          <%= gossip.content %><br/>
+          <a href="/gossips/<%= id %>/edit/">Editer ce potin</a>
+        </p>
+  </body>
+</html>
